@@ -1,0 +1,77 @@
+body{
+   
+    background: linear-gradient(0deg,rgb(110,100,255), rgb(230,210,200),rgb(210,110,110))
+}
+.logo{
+    text-align: center;
+    background-color: rgb(255, 255, 255,.5);
+}
+.logo a{
+
+
+    font-size: 4rem;
+    margin:0.2rem 0px 1.1rem 1rem;
+    font-family: 'Yellowtail', cursive;
+    color: rgb(185, 0, 0);
+}
+h1{ 
+    text-align: center;
+margin: 5px 0 15px 0;
+    color: white;
+    font-size: 4rem;
+}
+.jeans{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70rem;
+    margin:0 auto 10rem auto;
+    gap: 2rem 2rem;
+
+}
+.jeans img{
+    width: 20rem;
+    height: 23rem;
+    box-shadow: 2px 2px 3px rgba(59, 40, 30, .4);
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.jeans img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.jeans li{
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+align-items: center;
+
+
+}
+.price{
+    
+    text-align: center;
+    padding:.5rem 1rem;
+    margin: 10px 0 0 0;
+    color: rgb(197, 52, 52);
+    font-weight: bold;
+    background-color: rgba(255, 239, 150, 0.3);
+}
+.price:hover{
+    background-color: rgba(255, 239, 150);
+}
+
+.buy{
+    text-align: center;
+    background-color: rgb(230,230,230);
+    color: rgb(59,50,36);
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    margin: 8px 0 0 0;
+}
+.buy:hover{
+background-color: white;
+}

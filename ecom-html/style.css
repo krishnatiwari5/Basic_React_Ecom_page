@@ -1,0 +1,209 @@
+.logo{
+    text-align: center;
+
+}
+.logo a{
+
+    font-size: 4rem;
+    margin:0.2rem 0px 1.1rem 1rem;
+    font-family: 'Yellowtail', cursive;
+    color: rgb(185, 0, 0);
+}
+#button{
+  justify-content: center;
+display: none;
+
+}
+.humburger{
+    width: 3rem;
+height: 3rem;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+padding: 5px;
+
+/* display: none; */
+}
+.humburger span{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 3px;
+  
+}
+
+ .humburger:hover{
+     background-color: rgba(228, 218, 218, 0.3);
+ }   
+header{
+    display: flex;
+    justify-content: center;
+}
+header ul{
+    display: flex;
+    
+}
+header ul li a::before {
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    height: 3px;
+    background-color: black;
+    transition: transform 500ms ease-in-out;
+    transform-origin: center ;
+    transform: scale(0);
+
+}
+
+header ul li a:hover::before {
+    transform: scale(1);
+}
+header ul li{
+    font-size: 1.5rem;
+margin:0px  2rem 1rem 2rem;
+position: relative;
+}
+header ul li a{
+    color: rgb(79,59,60);
+    transition: transform 1s ease-in-out .5s;
+}
+header li a:hover{
+    transform: scale(1.5rem);
+    color: rgb(238, 34, 34);
+}
+.bg{
+    width: 100%;
+    height: 80rem;
+    position: absolute;
+    z-index: -1;
+   top: 0;
+    display: block;
+    opacity: .5;
+}
+#side-drawer{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(206, 193, 193);
+    display: none;
+}
+
+#side-drawer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    
+}
+#side-drawer li{
+    font-size: 3rem;
+    margin:0px  2rem 1rem 2rem;
+}
+#side-drawer li a{
+    color: rgb(131, 10, 10);
+
+}
+.final-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#side-drawer:target
+{
+    display: block;
+}
+
+.icons-btn{
+    width: 2rem;
+    margin-right: 10px;
+}
+#main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+main h2{
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(253, 253, 253);
+    background-color: rgb(66, 65, 64);
+    padding: 1rem;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   margin: 1.5rem;
+}
+.shop{
+    color: saddlebrown;
+    padding: .3rem;
+    background-color: rgb(238, 207, 195,.3);
+    margin: 8px;
+    border-radius: 5px;
+    border: 3px solid rgb(59,45,45) ;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.menu{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: .3rem;
+    background-color: rgba(117, 89, 77,.3);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.menu:hover{
+    background-color: rgba(123,29,29,.5);
+}
+.shop:hover{
+    color: rgb(236, 78, 30);
+    background-color: rgb(238, 207, 195);
+}
+.categories img{
+    width: 16rem;
+    height: 19rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(75, 73, 73, 0.5);
+    overflow: hidden;
+    transition: transform 2s ease-in-out;
+}
+.categories img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+@media(max-width:1110px){
+    header ul li{
+        font-size: 1.2rem;
+        margin:0px  1rem  .5rem  1rem;
+    }
+    .icons{
+        width: .8rem;
+
+    }
+}
+@media(max-width:48rem){
+    #button{
+        display:flex;
+    }
+   header nav{
+        display: none;
+    }
+.bg{
+    width: 100%;
+    height: 500%;
+}
+}
+@media(max-width:560px){
+    #side-drawer li{
+        font-size: 1.5rem;
+       padding: 0;
+       margin: 0 0 1rem 0;
+    }
+}

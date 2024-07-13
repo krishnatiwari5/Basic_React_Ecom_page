@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    /* background-color: rgb(250,140,210); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+#logo a{
+    color: yellow;
+    text-decoration: none;
+    font-size: 55px;
+    font-family: satisfy, cursive;
+    margin: 8px;
+    padding: 5px;
+
+}
+ul{
+    display: flex;
+margin: 5px;
+padding: 5px;
+list-style: none;
+
+}
+
+ul li a{
+   font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    color: yellow;
+    text-decoration: none;
+    border-radius: 10px;
+  } 
+  ul li a:hover{
+      background-color: rgb(223, 223, 33);
+      color:royalblue;
+  } 
+  #info{
+         height: 700px;
+      background-image:url("ocean.jpg"); 
+      background-position: center;
+      background-size: cover;
+ 
+  }
+  #info-content{
+      width: 800px;
+      background-color: rgba(51,47,47,.8);
+     box-shadow: 2px 5px 8px rgb(68,67,67);
+     text-align: center;
+     margin:0px auto; 
+     padding: 30px 0 30px 0;
+border-radius: 15px;
+     position: relative;
+  top: 280px; ;
+  
+  }
+  #info-content h1{
+color: white;
+text-transform: uppercase;
+font-size: 50px;
+margin: 0;
+font-family: 'Merienda', cursive;
+
+  }
+  #info-content p{
+      color: white;
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight: 250;
+      margin: 5px 10px 20px 10px;
+  }
+  #info-content a{
+      text-decoration: none;
+      background-color: rgb(225,251,0);
+      padding: 8px 18px;
+  
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgb(68,67,67);
+      
+  }
+  #info-content a:hover{
+      color: rgb(200, 150, 100);
+      background-color: seashell;
+      
+  }
+  #highlights {
+      padding: 15px;
+      background: linear-gradient(0deg, rgb(227,255,253), rgb(202,243,240));
+  }
+  #highlights h2{
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 40px;
+      color: rgb(59,65 ,64 );
+      margin: 20px;
+  }
+  #destination{
+      display: flex;
+ align-items: center;
+     justify-content: space-evenly;
+  }
+  .destination{
+      margin: 0 20px;
+  }
+  .destination p{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 24px;
+color: rgb(124,123, 123);
+margin: 15px;
+  }
+  .destination img{
+      height: 200px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px rgb(68,67,67);
+  }
+  .destination strong{
+      color: rgb(0,160,117);
+  }
+  footer{
+      background: linear-gradient(78deg, rgb(24,24,24), rgb(25,29,29));
+   padding: 30px;
+  }
+  footer ul{
+      display: flex;
+      justify-content: center;
+  }
+  footer li img{
+height: 100px;
+margin: 0px 50px;
+  }
